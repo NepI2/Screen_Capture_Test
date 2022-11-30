@@ -22,7 +22,7 @@ import javax.imageio.stream.ImageInputStream;
 
 
 public class DetectAndDisplay {
-    public static CascadeClassifier faceCascade = new CascadeClassifier("haarcascade_eye_tree_eyeglasses.xml");
+    public static CascadeClassifier faceCascade = new CascadeClassifier("haarcascade_frontalface_alt.xml");
     public static CascadeClassifier eyesCascade = new CascadeClassifier("haarcascade_eye_tree_eyeglasses.xml");
     public static @NotNull Mat BufferedImage2Mat(BufferedImage image) throws IOException {
 
@@ -48,7 +48,7 @@ public class DetectAndDisplay {
 
             System.out.println("the beginning of detectAndDisplay");
             Mat frameGray = new Mat();
-            Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BayerBGGR2GRAY);
+            Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BayerBG2GRAY);
             Imgproc.equalizeHist(frameGray, frameGray);
             // -- Detect faces
             MatOfRect faces = new MatOfRect();
@@ -74,7 +74,7 @@ public class DetectAndDisplay {
                 }
             }
             //-- Show what you got
-//            HighGui.imshow("Capture - Face detection", frame );
+            HighGui.imshow("Capture - Face detection", frame );
             System.out.println("detected");
             return Mat2BufferedImage(frame);
         }
