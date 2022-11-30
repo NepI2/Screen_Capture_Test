@@ -1,6 +1,7 @@
 package GUI;
 
 import ScreenRecorder.ScreenRecorder;
+import org.opencv.core.Core;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,6 +22,7 @@ public class MainFrame extends JFrame{
 
     public MainFrame() throws IOException {
         InitializeComponents();
+        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         recorder = new ScreenRecorder();
         //System.setProperty("java.awt.headless", "false");
 

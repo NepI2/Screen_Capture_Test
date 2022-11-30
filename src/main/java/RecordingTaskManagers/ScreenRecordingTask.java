@@ -1,5 +1,6 @@
 package RecordingTaskManagers;
 
+import FaceEyesRecognition.DetectAndDisplay;
 import org.jcodec.api.awt.AWTSequenceEncoder;
 
 import java.awt.*;
@@ -21,10 +22,10 @@ public class ScreenRecordingTask extends TimerTask {
     @Override
     public void run() {
 
-
         image = robot.createScreenCapture(dimensions);
         try {
-            encoder.encodeImage(image);
+
+            encoder.encodeImage(DetectAndDisplay.ObjectDetection(image));
             System.out.println("encoding...");
         } catch (IOException e) {
             throw new RuntimeException(e);
