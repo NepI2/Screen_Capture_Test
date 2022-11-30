@@ -22,36 +22,49 @@ import javax.imageio.stream.ImageInputStream;
 
 
 public class DetectAndDisplay {
-    public static CascadeClassifier faceCascade = new CascadeClassifier("../../../../opencv/sources/data/haarcascades/haarcascade_frontalface_alt.xml");
-    public static CascadeClassifier eyesCascade = new CascadeClassifier("../../../../opencv/sources/data/haarcascades//haarcascade_eye_tree_eyeglasses.xml");
+    public static CascadeClassifier faceCascade = new CascadeClassifier("haarcascade_eye_tree_eyeglasses.xml");
+    public static CascadeClassifier eyesCascade = new CascadeClassifier("haarcascade_eye_tree_eyeglasses.xml");
     public static @NotNull Mat BufferedImage2Mat(BufferedImage image) throws IOException {
+
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         ImageIO.write(image, "jpg", byteArrayOutputStream);
         byteArrayOutputStream.flush();
-        return Imgcodecs.imdecode(new MatOfByte(byteArrayOutputStream.toByteArray()), Imgcodecs.IMREAD_GRAYSCALE);
+        System.out.println("the beginning of BufferedImage2Mat");
+        //IMWRITE_PNG_BILEVEL
+        return Imgcodecs.imdecode(new MatOfByte(byteArrayOutputStream.toByteArray()), Imgcodecs.IMWRITE_EXR_TYPE);
     }
+
 
     public static BufferedImage Mat2BufferedImage(Mat matrix)throws IOException {
         MatOfByte mob=new MatOfByte();
+        System.out.println("the beginning of imencode");
+
         Imgcodecs.imencode(".jpg", matrix, mob);
+        System.out.println("the beginning of return");
+
         return ImageIO.read(new ByteArrayInputStream(mob.toArray()));
     }
         public static BufferedImage detectAndDisplay(Mat frame, @NotNull CascadeClassifier faceCascade, CascadeClassifier eyesCascade) throws IOException {
 
+            System.out.println("the beginning of detectAndDisplay");
             Mat frameGray = new Mat();
-            Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BGR2GRAY);
+            Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BayerBGGR2GRAY);
             Imgproc.equalizeHist(frameGray, frameGray);
             // -- Detect faces
             MatOfRect faces = new MatOfRect();
+
+            System.out.println("the beginning of detectMultiScale");
             faceCascade.detectMultiScale(frameGray, faces);
             List<Rect> listOfFaces = faces.toList();
             for (Rect face : listOfFaces) {
+                System.out.println("the beginning of loop");
                 Point center = new Point(face.x + face.width / 2, face.y + face.height / 2);
                 Imgproc.ellipse(frame, center, new Size(face.width / 2, face.height / 2), 0, 0, 360,
                         new Scalar(255, 0, 255));
                 Mat faceROI = frameGray.submat(face);
                 // -- In each face, detect eyes
                 MatOfRect eyes = new MatOfRect();
+                System.out.println("the beginning of detectMultiscale");
                 eyesCascade.detectMultiScale(faceROI, eyes);
                 List<Rect> listOfEyes = eyes.toList();
                 for (Rect eye : listOfEyes) {
