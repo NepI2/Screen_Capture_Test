@@ -2,7 +2,7 @@ package ScreenRecorder;
 
 import RecordingTaskManagers.CounterTask;
 import RecordingTaskManagers.ScreenRecordingTask;
-import RecordingTaskManagers.MyTimer;
+import RecordingTaskManagers.RecordingTimer;
 import org.jcodec.api.awt.AWTSequenceEncoder;
 
 import javax.swing.*;
@@ -38,7 +38,7 @@ public class ScreenRecorder {
     public void startTimers(JLabel label) throws AWTException {
         isRecording = true;
         int framesSequence = 1000/24;
-        MyTimer.reset();
+        RecordingTimer.reset();
 
         timerForCounting = new Timer("TimeCounter");
         timerForRecording = new Timer("ScreenCapture");
@@ -52,7 +52,7 @@ public class ScreenRecorder {
 
     public void stopTimers() throws IOException {
         if (isRecording){
-            MyTimer.stop();
+            RecordingTimer.stop();
             timerForCounting.cancel();
             timerForCounting.purge();
 

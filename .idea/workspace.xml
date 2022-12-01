@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="Bug with OpenCV lib and MatToBufferedImage Conversion is fixed.">
+    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="Mistake with faceCascade is adjusted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/MyTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/RecordingTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +58,19 @@
     <configuration name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.MainFrame" />
       <module name="ScreenCapture_Version2" />
+      <shortenClasspath name="ARGS_FILE" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="GUI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <shortenClasspath name="ARGS_FILE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,7 +98,8 @@
       <workItem from="1669814602664" duration="2093000" />
       <workItem from="1669816714012" duration="83000" />
       <workItem from="1669816984480" duration="8375000" />
-      <workItem from="1669845563768" duration="1795000" />
+      <workItem from="1669845563768" duration="2483000" />
+      <workItem from="1669887837686" duration="9513000" />
     </task>
     <task id="LOCAL-00001" summary="Bug with non functional encoder is fixed">
       <created>1669793481149</created>
@@ -118,11 +129,23 @@
       <option name="project" value="LOCAL" />
       <updated>1669843450209</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mistake with faceCascade is adjusted">
+      <created>1669847594797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669847594797</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-core" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-s3" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-dynamodb" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -139,7 +162,8 @@
     <MESSAGE value="Bug with non functional encoder is fixed" />
     <MESSAGE value="Bug with OpenCV jar" />
     <MESSAGE value="Bug with OpenCV lib and MatToBufferedImage Conversion is fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug with OpenCV lib and MatToBufferedImage Conversion is fixed." />
+    <MESSAGE value="Mistake with faceCascade is adjusted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mistake with faceCascade is adjusted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -166,11 +190,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
           <line>23</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -178,15 +197,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
           <line>50</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
-          <line>81</line>
-          <properties class="FaceEyesRecognition.DetectAndDisplay" method="ObjectDetection">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsatisfiedLinkError" package="java.lang" />

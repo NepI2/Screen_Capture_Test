@@ -31,7 +31,7 @@ public class DetectAndDisplay {
         byteArrayOutputStream.flush();
         System.out.println("the beginning of BufferedImage2Mat");
         //IMWRITE_PNG_BILEVEL
-        return Imgcodecs.imdecode(new MatOfByte(byteArrayOutputStream.toByteArray()), Imgcodecs.IMWRITE_EXR_TYPE);
+        return Imgcodecs.imdecode(new MatOfByte(byteArrayOutputStream.toByteArray()), Imgcodecs.IMREAD_UNCHANGED);
     }
 
 
@@ -48,7 +48,7 @@ public class DetectAndDisplay {
 
             System.out.println("the beginning of detectAndDisplay");
             Mat frameGray = new Mat();
-            Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BayerBG2GRAY);
+            Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BGR2GRAY);
             Imgproc.equalizeHist(frameGray, frameGray);
             // -- Detect faces
             MatOfRect faces = new MatOfRect();
@@ -74,7 +74,7 @@ public class DetectAndDisplay {
                 }
             }
             //-- Show what you got
-            HighGui.imshow("Capture - Face detection", frame );
+            //HighGui.imshow("Capture - Face detection", frame );
             System.out.println("detected");
             return Mat2BufferedImage(frame);
         }

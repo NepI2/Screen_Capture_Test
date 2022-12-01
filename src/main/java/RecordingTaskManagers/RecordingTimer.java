@@ -1,6 +1,6 @@
 package RecordingTaskManagers;
 
-public class MyTimer {
+public class RecordingTimer {
     private static long startTime;
     private static long stopTime;
 
