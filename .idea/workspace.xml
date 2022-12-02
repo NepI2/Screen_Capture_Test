@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="Color format is fixed">
-      <change afterPath="$PROJECT_DIR$/src/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ClientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ImageDataLables.java" afterDir="false" />
+    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="AWS package and maven is created, stil problem with credentials.&#10;IPMORTANT!!! I'm using key and secret from System Environment, so it wont work if you (someone else) dont have it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AWSRekognition/ClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ClientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AWSRekognition/ImageDataLables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ImageDataLables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +48,7 @@
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;299&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Dimi/IdeaProjects/ScreenCapture_Version2&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.37471265&quot;,
@@ -103,7 +101,9 @@
       <workItem from="1669816984480" duration="8375000" />
       <workItem from="1669845563768" duration="2483000" />
       <workItem from="1669887837686" duration="11209000" />
-      <workItem from="1669966280387" duration="11259000" />
+      <workItem from="1669966280387" duration="14913000" />
+      <workItem from="1669985844795" duration="3553000" />
+      <workItem from="1669989451983" duration="454000" />
     </task>
     <task id="LOCAL-00001" summary="Bug with non functional encoder is fixed">
       <created>1669793481149</created>
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669903800386</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AWS package and maven is created, stil problem with credentials.&#10;IPMORTANT!!! I'm using key and secret from System Environment, so it wont work if you (someone else) dont have it">
+      <created>1669981479127</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669981479127</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +189,8 @@
     <MESSAGE value="Bug with OpenCV lib and MatToBufferedImage Conversion is fixed." />
     <MESSAGE value="Mistake with faceCascade is adjusted" />
     <MESSAGE value="Color format is fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Color format is fixed" />
+    <MESSAGE value="AWS package and maven is created, stil problem with credentials.&#10;IPMORTANT!!! I'm using key and secret from System Environment, so it wont work if you (someone else) dont have it" />
+    <option name="LAST_COMMIT_MESSAGE" value="AWS package and maven is created, stil problem with credentials.&#10;IPMORTANT!!! I'm using key and secret from System Environment, so it wont work if you (someone else) dont have it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -204,7 +212,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
-          <line>23</line>
+          <line>26</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

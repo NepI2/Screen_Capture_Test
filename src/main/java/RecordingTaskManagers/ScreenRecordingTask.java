@@ -4,6 +4,7 @@ import AWSRekognition.ImageDataLables;
 import FaceEyesRecognition.DetectAndDisplay;
 import org.jcodec.api.awt.AWTSequenceEncoder;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -15,10 +16,12 @@ public class ScreenRecordingTask extends TimerTask {
     Rectangle dimensions;
     BufferedImage image;
     public String ImageData;
+    JTextPane paneToWrite;
 
-    public ScreenRecordingTask(AWTSequenceEncoder enc, Rectangle rectangle) throws AWTException {
+    public ScreenRecordingTask(AWTSequenceEncoder enc, Rectangle rectangle, JTextPane text) throws AWTException {
         encoder = enc;
         dimensions = rectangle;
+        paneToWrite = text;
         robot = new Robot();
     }
     @Override
@@ -28,6 +31,7 @@ public class ScreenRecordingTask extends TimerTask {
         try {
 
             ImageData = ImageDataLables.GetData(image);
+            paneToWrite.setText(ImageData);
             encoder.encodeImage(DetectAndDisplay.ObjectDetection(image));
             System.out.println("encoding...");
         } catch (IOException e) {

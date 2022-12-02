@@ -34,6 +34,7 @@ public class ImageDataLables {
         System.out.println("request with image is done");
 
         DetectFacesResult result = rekognition.detectFaces(request);
+        System.out.println("got result from rekognition.detectFaces");
         List<FaceDetail> faceDetails = result.getFaceDetails();
         for (FaceDetail faceDetail:faceDetails) {
             List<Emotion> lst = faceDetail.getEmotions();

@@ -2,11 +2,10 @@ package AWSRekognition;
 
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.Protocol;
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSCredentialsProvider;
-import com.amazonaws.auth.AWSSessionCredentials;
-import com.amazonaws.auth.AWSStaticCredentialsProvider;
+import com.amazonaws.auth.*;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
+import com.amazonaws.client.builder.AwsClientBuilder;
+import software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.rekognition.AmazonRekognition;
 import com.amazonaws.services.rekognition.AmazonRekognitionClientBuilder;
@@ -23,7 +22,7 @@ public class ClientFactory {
         clientConfig.setRequestTimeout(60000);
         clientConfig.setProtocol(Protocol.HTTPS);
         System.out.println("setting HTTPS is finished");
-//        AWSCredentialsProvider credentialsProvider = new ProfileCredentialsProvider();
+        AWSCredentialsProvider credentialsProvider = new ProfileCredentialsProvider();
 
         return AmazonRekognitionClientBuilder
                 .standard()

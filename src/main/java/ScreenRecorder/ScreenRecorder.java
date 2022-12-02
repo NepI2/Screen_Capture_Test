@@ -45,8 +45,7 @@ public class ScreenRecorder {
         timerForRecording = new Timer("ScreenCapture");
 
         counterTask = new CounterTask(label);
-        recordingTask = new ScreenRecordingTask(encoder,dimensions);
-        text.setText(recordingTask.ImageData);
+        recordingTask = new ScreenRecordingTask(encoder,dimensions,text);
 
         timerForCounting.scheduleAtFixedRate(counterTask,0,1000);
         timerForRecording.scheduleAtFixedRate(recordingTask,0,framesSequence);
