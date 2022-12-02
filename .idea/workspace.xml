@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="Mistake with faceCascade is adjusted">
+    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="Color format is fixed">
+      <change afterPath="$PROJECT_DIR$/src/credentials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ClientFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ImageDataLables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/MyTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/RecordingTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +102,8 @@
       <workItem from="1669816714012" duration="83000" />
       <workItem from="1669816984480" duration="8375000" />
       <workItem from="1669845563768" duration="2483000" />
-      <workItem from="1669887837686" duration="9513000" />
+      <workItem from="1669887837686" duration="11209000" />
+      <workItem from="1669966280387" duration="11259000" />
     </task>
     <task id="LOCAL-00001" summary="Bug with non functional encoder is fixed">
       <created>1669793481149</created>
@@ -136,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669847594797</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Color format is fixed">
+      <created>1669903770659</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669903770659</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Color format is fixed">
+      <created>1669903800386</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669903800386</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +181,8 @@
     <MESSAGE value="Bug with OpenCV jar" />
     <MESSAGE value="Bug with OpenCV lib and MatToBufferedImage Conversion is fixed." />
     <MESSAGE value="Mistake with faceCascade is adjusted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mistake with faceCascade is adjusted" />
+    <MESSAGE value="Color format is fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Color format is fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -175,7 +194,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java</url>
-          <line>53</line>
+          <line>55</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -185,7 +204,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
-          <line>21</line>
+          <line>23</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

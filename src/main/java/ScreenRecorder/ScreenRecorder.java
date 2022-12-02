@@ -35,9 +35,10 @@ public class ScreenRecorder {
     }
 
 
-    public void startTimers(JLabel label) throws AWTException {
+    public void startTimers(JLabel label,JTextPane text) throws AWTException {
         isRecording = true;
-        int framesSequence = 1000/24;
+//        int framesSequence = 1000/24;
+        int framesSequence = 2000;
         RecordingTimer.reset();
 
         timerForCounting = new Timer("TimeCounter");
@@ -45,6 +46,7 @@ public class ScreenRecorder {
 
         counterTask = new CounterTask(label);
         recordingTask = new ScreenRecordingTask(encoder,dimensions);
+        text.setText(recordingTask.ImageData);
 
         timerForCounting.scheduleAtFixedRate(counterTask,0,1000);
         timerForRecording.scheduleAtFixedRate(recordingTask,0,framesSequence);

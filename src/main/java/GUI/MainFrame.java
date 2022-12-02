@@ -17,7 +17,6 @@ public class MainFrame extends JFrame{
     private JTextPane textOutput;
     private JLabel lblEngagement;
     private JLabel lblTimer;
-
     ScreenRecorder recorder;
 
     public MainFrame() throws IOException {
@@ -30,7 +29,7 @@ public class MainFrame extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    recorder.startTimers(lblTimer);
+                    recorder.startTimers(lblTimer, textOutput);
                 } catch (AWTException ex) {
                     throw new RuntimeException(ex);
                 }

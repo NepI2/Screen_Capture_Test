@@ -1,5 +1,6 @@
 package RecordingTaskManagers;
 
+import AWSRekognition.ImageDataLables;
 import FaceEyesRecognition.DetectAndDisplay;
 import org.jcodec.api.awt.AWTSequenceEncoder;
 
@@ -13,6 +14,7 @@ public class ScreenRecordingTask extends TimerTask {
     Robot robot;
     Rectangle dimensions;
     BufferedImage image;
+    public String ImageData;
 
     public ScreenRecordingTask(AWTSequenceEncoder enc, Rectangle rectangle) throws AWTException {
         encoder = enc;
@@ -25,6 +27,7 @@ public class ScreenRecordingTask extends TimerTask {
         image = robot.createScreenCapture(dimensions);
         try {
 
+            ImageData = ImageDataLables.GetData(image);
             encoder.encodeImage(DetectAndDisplay.ObjectDetection(image));
             System.out.println("encoding...");
         } catch (IOException e) {
