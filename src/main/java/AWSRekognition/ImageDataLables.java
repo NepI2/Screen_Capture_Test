@@ -15,6 +15,19 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+
+//I suggest that you convert Mat into FloatBuffer as follows:
+//
+//        Mat floatMat = new Mat();
+//        mat.convertTo(floatMat, CV_32F);
+//        FloatBuffer floatBuffer = floatMat.createBuffer();
+//        Note that the createBuffer method is found within the Mat class of the import org.bytedeco.opencv.opencv_core.Mat not the import org.opencv.core.
+//
+//        Then you can create a tensor from the floatBuffer variable:
+//
+//        Tensor.create(new long[]{1, image_height, image_width, 3}, floatBuffer)
+
+
 public class ImageDataLables {
     static byte[] bytes;
     static ByteArrayOutputStream bytesStream;

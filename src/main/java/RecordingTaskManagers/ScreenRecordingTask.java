@@ -1,6 +1,6 @@
 package RecordingTaskManagers;
 
-import AWSRekognition.ImageDataLables;
+import DeepfaceLocalServer.DataLabelsFromLocalServer;
 import FaceEyesRecognition.DetectAndDisplay;
 import org.jcodec.api.awt.AWTSequenceEncoder;
 
@@ -15,6 +15,7 @@ public class ScreenRecordingTask extends TimerTask {
     Robot robot;
     Rectangle dimensions;
     BufferedImage image;
+    BufferedImage output;
     public String ImageData;
     JTextPane paneToWrite;
 
@@ -30,9 +31,11 @@ public class ScreenRecordingTask extends TimerTask {
         image = robot.createScreenCapture(dimensions);
         try {
 
-            ImageData = ImageDataLables.GetData(image);
-            paneToWrite.setText(ImageData);
-            encoder.encodeImage(DetectAndDisplay.ObjectDetection(image));
+            //ImageData = DataLabelsFromLocalServer.GetData(image);
+            //ImageData = ImageDataLables.GetData(image);
+            //paneToWrite.setText(ImageData);
+            output = DetectAndDisplay.ObjectDetection(image);
+            encoder.encodeImage(output);
             System.out.println("encoding...");
         } catch (IOException e) {
             throw new RuntimeException(e);

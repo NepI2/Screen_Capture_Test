@@ -58,6 +58,7 @@ public class DetectAndDisplay {
             List<Rect> listOfFaces = faces.toList();
             for (Rect face : listOfFaces) {
                 System.out.println("the beginning of loop");
+
                 Point center = new Point(face.x + face.width / 2, face.y + face.height / 2);
                 Imgproc.ellipse(frame, center, new Size(face.width / 2, face.height / 2), 0, 0, 360,
                         new Scalar(255, 0, 255));
@@ -82,6 +83,7 @@ public class DetectAndDisplay {
         public static BufferedImage ObjectDetection(BufferedImage image) throws IOException {
 
             //System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+
 
 
 

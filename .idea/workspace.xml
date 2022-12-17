@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="AWS package and maven is created, stil problem with credentials.&#10;IPMORTANT!!! I'm using key and secret from System Environment, so it wont work if you (someone else) dont have it">
+    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="expression and percentage is written on a JTextPane">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Assets/final_xception.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DeepfaceLocalServer/DataLabelsFromLocalServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AWSRekognition/ClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ClientFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AWSRekognition/ImageDataLables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ImageDataLables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +33,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/tensorflow/libtensorflow/1.15.0/libtensorflow-1.15.0-sources.jar!/org/tensorflow/SavedModelBundle.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,7 +52,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;299&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dimi/IdeaProjects/ScreenCapture_Version2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dimi/IdeaProjects/ScreenCapture_Version2/src/main/java/Assets&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -55,6 +60,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dimi\IdeaProjects\ScreenCapture_Version2\src\main\java\Assets" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.MainFrame" />
@@ -103,7 +113,19 @@
       <workItem from="1669887837686" duration="11209000" />
       <workItem from="1669966280387" duration="14913000" />
       <workItem from="1669985844795" duration="3553000" />
-      <workItem from="1669989451983" duration="454000" />
+      <workItem from="1669989451983" duration="716000" />
+      <workItem from="1670246901349" duration="40000" />
+      <workItem from="1670246958057" duration="178000" />
+      <workItem from="1670247167183" duration="41000" />
+      <workItem from="1670248687419" duration="219000" />
+      <workItem from="1670337758428" duration="109000" />
+      <workItem from="1670501604674" duration="4166000" />
+      <workItem from="1670582336224" duration="8053000" />
+      <workItem from="1670998491075" duration="782000" />
+      <workItem from="1671175894165" duration="19935000" />
+      <workItem from="1671292311753" duration="14804000" />
+      <workItem from="1671314850229" duration="1528000" />
+      <workItem from="1671316475513" duration="2418000" />
     </task>
     <task id="LOCAL-00001" summary="Bug with non functional encoder is fixed">
       <created>1669793481149</created>
@@ -161,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669981479127</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="expression and percentage is written on a JTextPane">
+      <created>1669990106100</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669990106100</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,40 +219,96 @@
     <MESSAGE value="Mistake with faceCascade is adjusted" />
     <MESSAGE value="Color format is fixed" />
     <MESSAGE value="AWS package and maven is created, stil problem with credentials.&#10;IPMORTANT!!! I'm using key and secret from System Environment, so it wont work if you (someone else) dont have it" />
-    <option name="LAST_COMMIT_MESSAGE" value="AWS package and maven is created, stil problem with credentials.&#10;IPMORTANT!!! I'm using key and secret from System Environment, so it wont work if you (someone else) dont have it" />
+    <MESSAGE value="expression and percentage is written on a JTextPane" />
+    <option name="LAST_COMMIT_MESSAGE" value="expression and percentage is written on a JTextPane" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java</url>
-          <line>55</line>
+          <line>54</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ScreenRecorder/ScreenRecorder.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/java/DeepfaceLocalServer/DataLabelsFromLocalServer.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DeepfaceLocalServer/DataLabelsFromLocalServer.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DeepfaceLocalServer/DataLabelsFromLocalServer.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="5" />
+          <line>30</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
           <line>23</line>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsatisfiedLinkError" package="java.lang" />
