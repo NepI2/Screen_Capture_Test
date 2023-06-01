@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="expression and percentage is written on a JTextPane">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assets/final_xception.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DeepfaceLocalServer/DataLabelsFromLocalServer.java" afterDir="false" />
+    <list default="true" id="aca8397c-6c32-458d-9813-12cbeb719dc3" name="Changes" comment="!!!!Atantion!!!!With some double screens does problems with AWTSequenceEncoder encoder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AWSRekognition/ImageDataLables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AWSRekognition/ImageDataLables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DeepfaceLocalServer/DataLabelsFromLocalServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DeepfaceLocalServer/DataLabelsFromLocalServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +122,16 @@
       <workItem from="1671292311753" duration="14804000" />
       <workItem from="1671314850229" duration="1528000" />
       <workItem from="1671316475513" duration="2418000" />
+      <workItem from="1671608961963" duration="2317000" />
+      <workItem from="1672774463070" duration="1682000" />
+      <workItem from="1672776333696" duration="1224000" />
+      <workItem from="1672888440353" duration="27000" />
+      <workItem from="1672946500895" duration="626000" />
+      <workItem from="1676473566385" duration="632000" />
+      <workItem from="1676532467749" duration="2281000" />
+      <workItem from="1678435490215" duration="703000" />
+      <workItem from="1678960220561" duration="537000" />
+      <workItem from="1685602275632" duration="148000" />
     </task>
     <task id="LOCAL-00001" summary="Bug with non functional encoder is fixed">
       <created>1669793481149</created>
@@ -246,11 +252,6 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FaceEyesRecognition/DetectAndDisplay.java</url>
           <line>31</line>
           <option name="timeStamp" value="30" />
@@ -295,21 +296,6 @@
           <line>37</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/RecordingTaskManagers/ScreenRecordingTask.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsatisfiedLinkError" package="java.lang" />
           <option name="timeStamp" value="9" />
@@ -318,6 +304,15 @@
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="14" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/DeepfaceLocalServer/DataLabelsFromLocalServer.java</url>
+          <line>53</line>
+          <properties class="DeepfaceLocalServer.DataLabelsFromLocalServer" method="GetData">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

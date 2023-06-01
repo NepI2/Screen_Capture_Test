@@ -76,7 +76,7 @@ public class DataLabelsFromLocalServer {
 
         if (response != null) {
             try {
-                json = EntityUtils.toString(response.getEntity());
+                json = EntityUtils.toString(response.getEntity(), "UTF-8");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             } catch (ParseException e) {

@@ -31,11 +31,11 @@ public class ScreenRecordingTask extends TimerTask {
         image = robot.createScreenCapture(dimensions);
         try {
 
-            //ImageData = DataLabelsFromLocalServer.GetData(image);
+            ImageData = DataLabelsFromLocalServer.GetData(image);
             //ImageData = ImageDataLables.GetData(image);
-            //paneToWrite.setText(ImageData);
-            output = DetectAndDisplay.ObjectDetection(image);
-            encoder.encodeImage(output);
+            paneToWrite.setText(ImageData);
+            //output = DetectAndDisplay.ObjectDetection(image);
+            //encoder.encodeImage(output);
             System.out.println("encoding...");
         } catch (IOException e) {
             throw new RuntimeException(e);
